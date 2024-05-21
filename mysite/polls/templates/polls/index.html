@@ -1,4 +1,14 @@
-{% if latest_question_list %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Example: Static files </title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+
+
+    {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
     <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
@@ -7,3 +17,10 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+    
+    </body>
+</html>
+
+
+
