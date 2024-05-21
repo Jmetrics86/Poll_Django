@@ -1,11 +1,5 @@
 poll_django_venv/
 db.sqlite3
-mysite/polls/__pycache__/
-mysite/polls/__pycache__/tests.cpython-312.pyc
-mysite/polls/__pycache__/admin.cpython-312.pyc
-mysite/polls/__pycache__/apps.cpython-312.pyc
-mysite/polls/__pycache__/models.cpython-312.pyc
-mysite/polls/__pycache__/tests.cpython-312.pyc
-mysite/polls/__pycache__/urls.cpython-312.pyc
-mysite/polls/__pycache__/views.cpython-312.pyc
-mysite/polls/__pycache__/__init__.cpython-312.pyc
+__pycache__/
+*.pyc
+
