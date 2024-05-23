@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "polls.apps.PollsConfig", #added polls app note the structure
+    'polls.apps.PollsConfig', #added polls app note the structure
+    'debug_toolbar', #starting part 8 of tutorial adding in the django debug toolbar
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware", #added in part 8 for debug toolbar rmember GZIP middlware comes before this in order.
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -126,3 +128,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+INTERNAL_IPS = [
+    "127.0.0.1", #If using Docker, the toolbar will attempt to look up your host name automatically and treat it as an allowable internal IP. If you’re not able to get the toolbar to work with your docker installation, review the code in debug_toolbar.middleware.show_toolbar.
+]
