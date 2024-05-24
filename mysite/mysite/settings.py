@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig', #added polls app note the structure
+    'django_polls.apps.PollsConfig', #added the packaged app from my /documents1 folder.
+    #'polls.apps.PollsConfig', #added polls app note the structure
     'debug_toolbar', #starting part 8 of tutorial adding in the django debug toolbar
     'django.contrib.admin',
     'django.contrib.auth',

@@ -1,6 +1,12 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Example: Static files </title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
 
 <h1>{{ question.question_text }}</h1>
 
@@ -11,3 +17,8 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+
+</body>
+</html>
+
+

@@ -19,7 +19,8 @@ from django.urls import include, path
 from django.views.generic import RedirectView
 
 urlpatterns = [
-    path("polls/", include("polls.urls")),
+    #path("polls/", include("polls.urls")), removed this as we test with the packaged app!
+    path("polls/", include("django_polls.urls")),
     path('admin/', admin.site.urls),
     path("__debug__/", include("debug_toolbar.urls")),
     path('', RedirectView.as_view(url='/polls/', permanent=False)),  # Temporary redirect
