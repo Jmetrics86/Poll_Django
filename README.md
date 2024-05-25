@@ -1,9 +1,11 @@
-# Django Poll App Tutorial 🗳️
+# Django Poll App Tutorial Final Result 🗳️
 
 [![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)](https://www.djangoproject.com/)
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffde57)](https://www.python.org/)
 
 Discover the world of web development by building a simple yet powerful polling application using Django, a popular Python web framework.
+
+Follow along with the tutorial <a href="https://docs.djangoproject.com/en/5.0/intro/tutorial01/">here:</a>
 
 ## Table of Contents
 
