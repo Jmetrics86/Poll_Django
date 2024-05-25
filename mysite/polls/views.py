@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
 
-# Created my original views here. to be replaced with the built in views
+#Created my original views here. to be replaced with the built in views
 
 # def index(request):
 #     latest_question_list = Question.objects.order_by("-pub_date")[:5]
@@ -34,7 +34,7 @@ class IndexView(generic.ListView):
 
 
 class DetailView(generic.DetailView):
-    ...
+    template_name = "polls/detail.html"
 
     def get_queryset(self):
         """
