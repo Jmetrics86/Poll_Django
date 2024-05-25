@@ -5,7 +5,7 @@
 
 Discover the world of web development by building a simple yet powerful polling application using Django, a popular Python web framework.
 
-Follow along with the tutorial <a href="https://docs.djangoproject.com/en/5.0/intro/tutorial01/">here:</a>
+Follow along with the tutorial <a href="https://docs.djangoproject.com/en/5.0/intro/tutorial01/">here!</a>
 
 ## Table of Contents
 
