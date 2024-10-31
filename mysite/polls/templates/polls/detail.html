@@ -3,10 +3,11 @@
 <html>
 
 <head>
-    <title>Django Example: Static files </title>
+    <title>Django Poll: Question Selection</title>
     <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 </head>
 <body>
+    <h1>Question Details</h1>
 <form action="{% url 'polls:vote' question.id %}" method="post">
     {% csrf_token %}
     <fieldset>

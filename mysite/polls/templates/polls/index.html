@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Django Example: Static files </title>
+    <title>Django Poll: Home </title>
     <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 </head>
 <body>
 
-
+    <h1>Question Selection</h1>
     {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
