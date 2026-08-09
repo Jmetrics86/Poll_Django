@@ -2,3 +2,14 @@ poll_django_venv/
 db.sqlite3
 __pycache__/
 *.pyc
+
+# Security & OS ignores
+.env
+*.pem
+*.key
+node_modules/
+__pycache__/
+*.sqlite3
+.DS_Store
+dist/
+build/
